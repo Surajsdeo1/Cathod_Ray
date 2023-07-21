@@ -1,0 +1,110 @@
+.container{
+    width: 1355px;
+    height:680px;
+    background-image: url("grass.png");
+     background-color: rgba(173, 41, 41, 0.134);
+     border-color:black;
+     border-width: 7px;
+     border-style:dashed;
+
+}
+#box1{
+   width:10%;
+   height:5%;
+   border:5px solid  rgba(0, 255, 229, 0.405) ;
+     background-color: rgba(111, 255, 0, 0.684);
+    text-size-adjust: 2px;
+    color:rgb(28, 32, 32);
+    
+     text-align: center;
+    border-radius: 50px;
+    position:relative;
+  margin:10px;
+    animation-name: rightmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function:linear;
+    animation-direction: alternate;
+   
+    animation-fill-mode:both;
+}
+@keyframes rightmove{
+    from{
+        top: 0;
+        left: 0;
+
+    }
+    to{
+        top: 0;
+        left: 1200px;
+
+    }
+}
+#box2{
+    width:10%;
+    height:5%;
+     border:5px solid  rgba(0, 255, 229, 0.405) ;
+     background-color: rgba(111, 255, 0, 0.684);
+     text-size-adjust: 2px;
+     color:rgb(28, 32, 32);
+    
+     text-align: center;
+     
+     border-radius: 50px;
+     position:relative;
+     margin: 10px;
+     
+     animation-name: leftmove;
+     animation-delay:5s;
+     animation-iteration-count: infinite;
+     animation-duration: 5s;
+     animation-timing-function:linear;
+     animation-direction: alternate;
+    
+     animation-fill-mode:both;
+ }
+ @keyframes leftmove{
+     from{
+         top: 500px;
+         left:1200px;
+ 
+     }
+     to{
+         top: 500px;
+         left:0px;
+ 
+     }
+ }
+ #boxmid{
+    width:2%;
+    height:3%;
+    
+     background-color: red;
+     text-size-adjust: 2px;
+     color:rgb(28, 32, 32);
+     
+      text-align: center;
+     border-radius: 50px;
+     position:relative;
+   margin:10px;
+     animation-name: Allmove;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-play-state: unset;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     animation-fill-mode:both;
+ }
+ @keyframes Allmove{
+     from{
+        top:0;
+        left:0;
+     }
+     to{
+        top:75%;
+        left: 1300px;
+     }
+ }
+ 
+
